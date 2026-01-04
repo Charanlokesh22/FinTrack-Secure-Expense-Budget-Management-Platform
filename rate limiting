@@ -1,0 +1,9 @@
+from time import time
+
+requests = {}
+
+def rate_limit(user):
+    now = time()
+    if user in requests and now - requests[user] < 1:
+        raise Exception("Too many requests")
+    requests[user] = now
