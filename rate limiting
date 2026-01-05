@@ -7,3 +7,4 @@ def rate_limit(user):
     if user in requests and now - requests[user] < 1:
         raise Exception("Too many requests")
     requests[user] = now
+
