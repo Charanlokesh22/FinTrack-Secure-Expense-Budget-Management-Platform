@@ -5,3 +5,4 @@ client = MongoClient(MONGO_URL)
 db = client[DATABASE_NAME]
 expenses_collection = db["expenses"]
 
+
