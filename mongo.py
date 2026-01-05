@@ -6,3 +6,5 @@ db = client[DATABASE_NAME]
 expenses_collection = db["expenses"]
 
 
+
+
